@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="text" />
+    <p id="count"></p>
+    <script>
+      const text = document.querySelector("#text");
+      const count = document.querySelector("#count");
+
+      text.addEventListener("input", function () {
+        let str1 = text.value.toUpperCase();
+        text.value = str1;
+        count.innerHTML = "character length" + str1.length;
+      });
+    </script>
+  </body>
+</html>
